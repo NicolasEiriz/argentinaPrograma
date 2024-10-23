@@ -21,9 +21,11 @@
 */
 
 
+
 /*
     Mostrando texto
     ===============
+
 
     Empecemos mostrando el resultado de tu código en la pantalla.
 
@@ -54,6 +56,11 @@
 
 // Consejo: El atajo del teclado para guardar cambios a un archivo es 'CMD + S' en Mac y 'CTRL + S' en
 //      Windows.
+
+
+// let nombreDeVariable
+
+// console.log('Nombre de variable es ' + nombreDeVariable)
 
 
 /*
@@ -116,6 +123,12 @@
 // mostralas con un alert.
 
 
+// // let nombre = 'Nicola'
+// let edad = 30
+
+// console.log(nombre, edad)
+
+
 // Consejo: para mostrar 2 variables de texto al mismo tiempo, las podés unir usando el signo '+'. Ejemplo:
 
 /*
@@ -149,6 +162,11 @@
 */
 
 // TAREA: Crear una constante y mostrarla con un alert
+
+// const IVA = 21
+
+// IVA = 22
+
 
 
 // TAREA: Intentar asignar un valor a una constante y ver qué pasa (mirar la consola)
@@ -184,7 +202,13 @@
 // Mostrar el valor de resultadoMultiplicacion con un alert o un console.log
 
 
+// const DIEZ = 10
+// const TRES = 3
+
+// let resultadoSuma = DIEZ + TRES
+// console.log(resultadoSuma)
 /*
+
     Funciones
     =========
 
@@ -228,16 +252,29 @@
 
     Consejo: Podemos aceptar múltiples argumentos (tambien llamados parámetros) separándolos con una coma ','.
 
-         function nombreFunction(argumento1, argumento2) {
-         }
-*/
+//          function nombreFunction(argumento1, argumento2) {
+//          }
+// */
 
-// TAREA: Es tu turno de crear una función!
 
-// Creá una función llamada 'sumar'
-// Escribí código para que acepte 2 argumentos (numero1 y numero2)
-// Escribí código para que devuelva (return) la suma de numero1 y numero2
-// Ejecutá la función sumar y mostrá su resultado en la consola
+// function duplicar(numero){
+//     return numero * 2
+// }
+
+// console.log(duplicar(10))
+
+// // TAREA: Es tu turno de crear una función!
+
+// // Creá una función llamada 'sumar'
+// // Escribí código para que acepte 2 argumentos (numero1 y numero2)
+// // Escribí código para que devuelva (return) la suma de numero1 y numero2
+// // Ejecutá la función sumar y mostrá su resultado en la consola
+
+// function sumar(numero1, numero2){
+//     return numero1+ numero2
+// }
+
+// console.log(sumar(2,3))
 
 
 // TAREA: Ahora creemos otra función llamada 'restar'
@@ -248,7 +285,68 @@
 // Consejo: Sabías que en vez de pasar los números directamente a tu función podés crear variables con esos números
 // y pasarlos como parámetros? Probalo!
 
-// Consejo: Dejá las funciones como están, no las comentes, las vamos a usar de nuevo.
+// // Consejo: Dejá las funciones como están, no las comentes, las vamos a usar de nuevo.
+
+// function restar(numero1,numero2){
+//     return numero1 - numero2
+// }
+
+// console.log(restar(10,2))
+
+
+// let mesNacimiento = 8
+
+// // let edadUsuario = prompt('Cual es tu nombre')
+
+// function saludar(nombre){
+//     return 'Hola ' + nombre
+// }
+
+
+//  let nombre = prompt('Cual es tu nombre?')
+
+//  console.log(
+    // saludar(nombre)
+// )
+ 
+
+// Crear una funcion que tome como parametro el año actual y el año de nacimiento y calcule la edad del usuario 
+
+/*
+function calcularEdad(anioActual, anioNacimiento){
+    return anioActual - anioNacimiento
+}
+
+const anioActual = Number(prompt('Que año es?'))
+const anioNacimiento = Number(prompt('En que año nació'))*/
+
+//console.log(`Su edad es ${calculoEdad(anioActual,anioNacimiento)}`)
+
+
+
+function calcularSalarioMensual(salarioAnual){
+    const mesesEnUnAnio = 12
+    return salarioAnual / mesesEnUnAnio
+}
+
+
+function calcularSalarioAnual(salarioMensual){
+    const mesesEnUnAnio = 12
+    return salarioMensual * mesesEnUnAnio
+}
+
+function calcularSalarioSemanal(salarioAnual){
+    const semanasEnUnAnio = 52
+    return salarioAnual / semanasEnUnAnio
+}
+
+function calcularSalarioDiario(salarioAnual){
+    const diasEnUnAnio = 365
+    return salarioAnual / diasEnUnAnio
+}
+
+
+//const salarioMensual = Number(prompt('Cual es tu salario mensual?'))
 
 /*
     Condicionales If-Else
@@ -401,9 +499,9 @@
 // TAREA: usando el operador !, Intentá invertir una variable (de true a false, o de false a true) e imprimí el
 // resultado en la consola.
 
-miVariable = true
+// miVariable = true
 
-console.log(!miVariable)
+// console.log(!miVariable)
 
 ////////////////////////////////////////////////////////////////////////////
 // Felicitaciones! Terminaste el Nivel 1 de la introducción a JavaScript! //
