@@ -1,5 +1,135 @@
 //Link original y créditos a https://github.com/CodeGuppyPrograms/CodingChallenges (contiene las respuestas).
 
+/*Desafio 1
+
+function desafio1(numeroMaximo){
+    for(let i = numeroMaximo; i >= 1; i--){
+        console.log(i)
+    }
+}
+
+
+Desafio 2
+
+function desafio2(numeroMaximo){
+    for(let i = 1; i < numeroMaximo; i++){
+        if(i % 2 == 1){
+            console.log(i)
+        }
+    }
+}
+
+Desafio 3
+
+function desafio3(numeroMultiplicacion){
+    for(let i = 0; i <= 9; i++){
+        let multiplicacion = numeroMultiplicacion * i
+        console.log(`${numeroMultiplicacion} x ${i} = ${multiplicacion}`)
+    }
+}
+
+Desafio 4
+
+function desafio4(){
+    for(let i = 1; i <= 9;i++){
+        for(let z = 0; z <= 9; z++){
+            console.log(`${i} x ${z} = ${i * z}`)
+        }
+    }
+}
+
+Desafio 5
+
+function desafio5(){
+    let numerosEnArray = [1,2,3,4,5,6,7,8,9,10]
+    let sumaNumeros = 0;
+
+    for(let i = 0; i <= numerosEnArray.length - 1; i++){
+        sumaNumeros += numerosEnArray[i]
+    }
+
+    return sumaNumeros
+}
+
+Desafio 6
+
+function desafio6(){
+  let resultado = 1;
+
+  for(let i = 1; i <= 10; i++){
+    resultado *= i
+  }
+  return resultado
+}
+
+Desafio 7
+
+function desafio7(){
+  let resultado = 0;
+
+  for(let i = 0; i < 30; i++){
+    if(i >= 10 && i < 30){
+      if(i % 2 == 1){
+        resultado += i
+        console.log(i)
+      }
+    } 
+  }
+  return resultado
+}
+
+
+Desafio 8
+
+function desafio8(gradosCelsius){
+
+    let conversionFahrenheit = (gradosCelsius * (9/5)) + 32
+
+    return conversionFahrenheit
+  }
+
+
+Desafio 9
+
+function desafio9(gradosFahrenheit){
+
+  let conversionCelsius = (gradosFahrenheit - 32) * (5/9)
+
+  return conversionCelsius
+}
+
+
+Desafio 12
+
+
+
+function desafio12(array){
+  let arrayPostivo = []
+
+  array.forEach(num=>{
+    if(Math.sign(num) == 1){
+      arrayPostivo.push(num)
+    }
+  })
+
+  return arrayPostivo
+}
+
+Desafio 13
+
+
+
+function desafio13(array){
+  
+  return (Math.max(...array))
+
+}
+
+
+
+*/
+
+
 /*
 Estos desafíos de coding están enfocados para los principiantes, por lo tanto las soluciones fueron implementadas
 usando  elementos de programación simples y clásicos.

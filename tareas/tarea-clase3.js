@@ -52,27 +52,42 @@ if(edadUsuario === miEdad){
 // Si no entendemos la respuesta, le decimos que no entendimos la respuesta.
 // Punto bonus: SI, NO, Si, No, si, no.
 
-/*function tieneDocumento(respuesta){
-    if(respuesta === 'si'){
-        return true
-    } else if(respuesta === 'no'){
-        return false
-    } else{
-        return 'No ha ingresado si o no'
-    }
-}
 
-let documentoUsuario = tieneDocumento(prompt('Tiene documento? responda si o no').toLowerCase())
+// Constante en mayuscula porque el valor es definido por nosotros en el código
 
-if(documentoUsuario){
+// function preguntarDni() {
 
-    let edadUsuario = Number(prompt('Que edad tiene?'))
-    
-    if(edadUsuario >= 18){
-        console.log('Puede entrar al bar')
-    } else if(edadUsuario < 18){
-        console.log('Usted no puede ingresar al bar por ser menor de edad')
-    }
-} else if(!documentoUsuario){
-    console.log('Usted no puede entrar al bar por no tener documento')
-}else(console.log('No entiendo su respuesta'))*/
+//     const EDAD_MINIMA_PARA_ENTRAR = 18;
+//     const RESPUESTA_SI = 'si'
+//     const RESPUESTA_NO = 'no'
+
+
+//     // Usamos el operador logico 'or' -> || porque si el usuario apreta escape como es un valor falso javascript va a tomar la segunda opcion que es '', y entonces el codigo toLowerCase no va a tirar un error, en caso que sea un null si lo haria
+//     const usuarioTieneDocumento = (prompt('Tenes documento?') || '').toLowerCase()
+
+//     if (usuarioTieneDocumento === RESPUESTA_SI) {
+//         return true
+//     }
+//     else if (usuarioTieneDocumento === RESPUESTA_NO) {
+//         alert('Anda a buscar tu dni+')
+//     } else {
+//         alert('No te entendi')
+//         preguntarDni()
+//     }
+//     return false
+// }
+
+// preguntarDni()
+
+function foo(b) {
+    const a = 10;
+    return a + b + 11;
+  }
+  
+  function bar(x) {
+    const y = 3;
+    return foo(x * y);
+  }
+  
+  const baz = bar(7); // assigns 42 to baz
+

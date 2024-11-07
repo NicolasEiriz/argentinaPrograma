@@ -20,7 +20,9 @@
     Cuando estás escribiendo código que querés que la máquina ejecute, ponelos AFUERA de los bloques de comentario.
 */
 
-
+if (true) {
+    console.log(hola)
+}
 
 /*
     Mostrando texto
@@ -277,6 +279,13 @@
 // console.log(sumar(2,3))
 
 
+// function restar(numero1,numero2){
+//     return numero1 - numero2
+// }
+
+// console.log(restar(10,2))
+
+
 // TAREA: Ahora creemos otra función llamada 'restar'
 //       Que acepte 2 números como parámetro y los reste, y que devuelva ese valor.
 // Ejecutá la función con los números 5 y 1 y mostralos con console.log
@@ -306,9 +315,9 @@
 //  let nombre = prompt('Cual es tu nombre?')
 
 //  console.log(
-    // saludar(nombre)
+// saludar(nombre)
 // )
- 
+
 
 // Crear una funcion que tome como parametro el año actual y el año de nacimiento y calcule la edad del usuario 
 
@@ -316,13 +325,53 @@
 function calcularEdad(anioActual, anioNacimiento){
     return anioActual - anioNacimiento
 }
-
+ 
 const anioActual = Number(prompt('Que año es?'))
 const anioNacimiento = Number(prompt('En que año nació'))*/
 
 //console.log(`Su edad es ${calculoEdad(anioActual,anioNacimiento)}`)
+/*
+
+function calcularMesesVividos(anioNacimiento, mesNacimiento, anioActual){
+    const cantidadAnios = anioActual - anioNacimiento
+    const mesesAproximados = cantidadAnios * 12
+    
+    return (mesesAproximados - (12 - mesNacimiento))
+}
+
+const anioNacimiento = Number(prompt('En que año naciste?'))
+const mesNacimiento = Number(prompt('En que mes naciste, indique en número'))
+const anioActual = Number(prompt('Indique el año actual'))
+
+console.log(`La cantidad de meses vividos es ${calcularMesesVividos(anioNacimiento,mesNacimiento,anioActual)}`)
+
+ */
 
 
+
+// Tengo que calcular cuantos meses vivio una persona, primero preguntar en que año nacio, luego preguntar el mes, y que año es. Luego resto el año actual con el año de nacimiento. Eso me da la cantidad de años que tiene, esa cantidad la multiplico por 12 y obtengo un aproximado de meses. Ese resultado le resto 12 - el mes de nacimiento ṕrque son los meses extra que no se toman en cuenta
+
+// C
+
+/*
+function holas(hola){
+    console.log(hola)
+}
+
+let hola = 'hola'
+
+holas()
+
+
+function pruebaHoisting(){
+    if(true == false){
+        var a = 'a'
+        console.log(a)
+    }
+    console.log(a)
+}
+//console.log(a)
+pruebaHoisting()
 
 function calcularSalarioMensual(salarioAnual){
     const mesesEnUnAnio = 12
@@ -343,7 +392,7 @@ function calcularSalarioSemanal(salarioAnual){
 function calcularSalarioDiario(salarioAnual){
     const diasEnUnAnio = 365
     return salarioAnual / diasEnUnAnio
-}
+}*/
 
 
 //const salarioMensual = Number(prompt('Cual es tu salario mensual?'))
@@ -380,6 +429,19 @@ function calcularSalarioDiario(salarioAnual){
         console.log('Nuestro número es menor que 7');
     }
 */
+
+// function sumar(numero1, numero2){
+//     return numero1+ numero2
+// }
+
+// console.log(sumar(2,3))
+
+
+// function restar(numero1,numero2){
+//     return numero1 - numero2
+// }
+
+// console.log(restar(10,2)) 
 
 /*
     Operadores de comparación
@@ -427,6 +489,27 @@ function calcularSalarioDiario(salarioAnual){
 
 // TAREA: Cambiar el operador a '-', y fijarse que llame a la función 'restar' en vez de a la de 'sumar'.
 
+let num1 = 3
+let num2 = 1
+
+
+function sumar(numero1, numero2) {
+    return numero1 + numero2
+}
+
+function restar(numero1, numero2) {
+    return numero1 - numero2
+}
+
+let operador = prompt('Elija un operador + o -')
+
+if (operador === '+') {
+    console.log(sumar(num1, num2))
+} else {
+    console.log(restar(num1, num2))
+}
+
+
 
 /*
     'If' - 'Else if' - 'Else'
@@ -439,7 +522,7 @@ function calcularSalarioDiario(salarioAnual){
         //algo
     else
         //algo que va a pasar si no se cumple ningún otra condición
-        
+
 
     Ejemplo:
 
@@ -452,7 +535,7 @@ function calcularSalarioDiario(salarioAnual){
         console.log('Nuestro número es igual a 7');
     }
 
-    Consejo: Podemos usar la cantidad de 'else if' que queramos uno después del otro, 
+    Consejo: Podemos usar la cantidad de 'else if' que queramos uno después del otro,
     el primero que es 'verdadero' es el único que pasa.
 */
 
@@ -477,7 +560,7 @@ function calcularSalarioDiario(salarioAnual){
     =================
     Poner un signo de exclamación (!) antes de un valor Booleano nos da el valor OPUESTO.
     Este operador ! se llama el operador "not".
-    
+
     El resultado de una comparación es un valor Booleano, lo podemos guardar en una variable así:
 
     const bool = (1 < 2);
