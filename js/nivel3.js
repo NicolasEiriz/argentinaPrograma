@@ -12,7 +12,7 @@
     TIP: Si querés utilizar multiples archivos .js, simplemente
     agregá más etiquetas <script>.
 */
-
+ss
 /*
     Hablemos un poco más de HTML, CSS y de como podemos interactuar con ellos
     en JavaScript.
