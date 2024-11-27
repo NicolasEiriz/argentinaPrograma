@@ -12,7 +12,15 @@
     TIP: Si querés utilizar multiples archivos .js, simplemente
     agregá más etiquetas <script>.
 */
-ss
+//  
+
+const body = document.querySelector('body')
+
+const img = document.querySelector('img')
+console.log(img.src)
+
+img.src = 'img/kittens.jpeg'
+
 /*
     Hablemos un poco más de HTML, CSS y de como podemos interactuar con ellos
     en JavaScript.
@@ -143,7 +151,9 @@ ss
     // Esto obtendrá todos los <li> de la página.
     const mediaLinks = document.querySelectorAll('li');
 */
+const mediaLinks = document.querySelectorAll('li')
 
+// console.log(mediaLinks.length)
 // TAREA: Obtené todos los elementos <li> de la página en una variable llamada mediaLinks.
 
 
@@ -163,7 +173,9 @@ ss
 //      sobre cada item de mediaLinks y mostralos en pantalla con console.log
 
 
-
+for(let i = 0; i < mediaLinks.length; i++){
+    // console.log(mediaLinks[i])
+}
 
 
 
@@ -201,11 +213,23 @@ ss
     nuestroTwitter.textContent = '@ButenkoMe';
     console.log(nuestroTwitter.textContent);
     // Adiviná que es lo que vamos a ver en la página y en la consola!
-*/
+*/ 
 
 // TAREA: Hagamos un nuevo título! Cambiá el contenido de nuestro 'h1' y ponele lo que quieras.
 
+const titulo = document.querySelector('h1')
 
+titulo.style.color = 'red'
+titulo.style.backgroundColor = 'blue'
+
+const header = document.querySelector('header')
+const parrafo = document.createElement('p')
+const texto = document.createTextNode('Hola chacal')
+
+parrafo.appendChild(texto)
+header.appendChild(parrafo)
+
+parrafo.style.fontSize = '30px'
 
 
 
@@ -278,9 +302,10 @@ ss
 //
 // P.S. También les podés dar estilos al nuevo nodo que creaste.
 
+const nodoImagen = document.createElement('img')
+nodoImagen.src = 'img/woman_bw.jpg'
 
-
-
+header.appendChild(nodoImagen)
 
 
 ////////////////////////////////////////////////////////////////////////////
